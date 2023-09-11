@@ -32,22 +32,7 @@ if app_mode == 'About App':
     st.markdown("- <h5>Upload the Video and Detect the fires in Videos</h5>",unsafe_allow_html=True)
     st.image("Images/third_3.png")
    
-    st.markdown("""
-                ## Features
-- Detect on Image
-- Detect on Videos
-- Live Detection
-## Tech Stack
-- Python
-- PyTorch
-- Python CV
-- Streamlit
-- YoloV5
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://antrosafin.netlify.app)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/antro-safin-m)
-[![twitter](https://img.shields.io/badge/Github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AntroSafin)
-""")
+  
     
 
 if app_mode == 'Run on Image':
