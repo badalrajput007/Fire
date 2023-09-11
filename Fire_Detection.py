@@ -31,11 +31,7 @@ if app_mode == 'About App':
     st.image("Images/second_2.png")
     st.markdown("- <h5>Upload the Video and Detect the fires in Videos</h5>",unsafe_allow_html=True)
     st.image("Images/third_3.png")
-    st.markdown("- <h5>Live Detection</h5>",unsafe_allow_html=True)
-    st.image("Images/fourth_4.png")
-    st.markdown("- <h5>Click Start to start the camera</h5>",unsafe_allow_html=True)
-    st.markdown("- <h5>Click Stop to stop the camera</h5>",unsafe_allow_html=True)
-    
+   
     st.markdown("""
                 ## Features
 - Detect on Image
@@ -116,29 +112,3 @@ if app_mode == 'Run on Video':
         text.write(f"<h1 style='text-align: center; color:red;'>{length}</h1>",unsafe_allow_html = True)
         stframe.image(output)
         
-'''if app_mode == 'Run on WebCam':
-    st.subheader("Detected Fire:")
-    text = st.markdown("")
-    
-    st.sidebar.markdown("---")
-    
-    st.subheader("Output")
-    stframe = st.empty()
-    
-    run = st.sidebar.button("Start")
-    stop = st.sidebar.button("Stop")
-    st.sidebar.markdown("---")
-    
-    cam = cv2.VideoCapture(0)
-    if(run):
-        while(True):
-            if(stop):
-                break
-            ret,frame = cam.read()
-            frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
-            model = load_model()
-            results = model(frame)
-            length = len(results.xyxy[0])
-            output = np.squeeze(results.render())
-            text.write(f"<h1 style='text-align: center; color:red;'>{length}</h1>",unsafe_allow_html = True)
-            stframe.image(output)'''
