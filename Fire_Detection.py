@@ -19,7 +19,7 @@ st.sidebar.title('App Mode')
 
 
 app_mode = st.sidebar.selectbox('Choose the App Mode',
-                                ['About App','Run on Image','Run on Video','Run on WebCam'])
+                                ['About App','Run on Image','Run on Video'])
 
 if app_mode == 'About App':
     st.subheader("About")
@@ -116,7 +116,7 @@ if app_mode == 'Run on Video':
         text.write(f"<h1 style='text-align: center; color:red;'>{length}</h1>",unsafe_allow_html = True)
         stframe.image(output)
         
-if app_mode == 'Run on WebCam':
+'''if app_mode == 'Run on WebCam':
     st.subheader("Detected Fire:")
     text = st.markdown("")
     
@@ -141,4 +141,4 @@ if app_mode == 'Run on WebCam':
             length = len(results.xyxy[0])
             output = np.squeeze(results.render())
             text.write(f"<h1 style='text-align: center; color:red;'>{length}</h1>",unsafe_allow_html = True)
-            stframe.image(output)
+            stframe.image(output)'''
