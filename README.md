@@ -6,7 +6,6 @@ This is the Fire Detection App created with custom trained models using YoloV5
 
 - Detect on Image
 - Detect on Videos
-- Live Detection
 
 
 ## Tech Stack
