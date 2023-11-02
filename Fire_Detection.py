@@ -17,6 +17,17 @@ demo_video = "Fire_Video.mp4"
 st.title('Fire Detection')
 st.sidebar.title('App Mode')
 
+# Add custom CSS to hide the GitHub icon and fork app logo
+custom_css = """
+<style>
+.css-1g7mpaj-Image,
+.css-1n9erby-Image {
+    display: none;
+}
+</style>
+"""
+
+st.markdown(custom_css, unsafe_allow_html=True)
 
 app_mode = st.sidebar.selectbox('Choose the App Mode',
                                 ['About App','Run on Image','Run on Video'])
